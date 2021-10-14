@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <p class="title" id="title"><h1 class="title">New Survey Form</h1></p>
+            <p class="description" id="description">Thank you for taking the time to help us improve the platform </p>
+        </header>
+        <div class="content">
+        <form action="" class="survey_form" id="survey_form">
+            <div class="form_group">
+                <label for="name" class="name" id="name-label">
+                    Please Enter Your Name
+                    <input type="name" class="name" placeholder="Enter Your Name" required>
+                </label>
+                <label for="email" class="email" id="email-label">
+                    Please Enter Your Email
+                    <input type="email" class="email" placeholder="Enter Your Email" required>
+                </label>
+                <label for="number" class="number" id="number-label">
+                    Please Enter Your Phone Number
+                    <input type="number" class="number" placeholder="Enter Your Number" required>
+                </label>
+                <label for="age" class="age" id="age-label">
+                    Please Enter Your Age
+                    <input type="date" class="age" placeholder="Enter Your Age" required>
+                </label>
+                <label for="role" class="role" id="role-label">
+                    Which option best describes your current role?
+                    <select name="role" id="role">
+                        <option value="select" disabled>Select Your current role</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full-time Job</option>
+                        <option value="learner">Full-time Learner</option>
+                        <option value="student">Other</option>
+                    </select>
+                </label>
+                <p class="reco">Would you recommend Us to a friend?</p>
+                <label for="radio" class="radios" id="radios">
+                    <input type="radio" name="srelector" id="definitely">Definitely
+                    <input type="radio" name="srelector" id="maybe">Maybe
+                    <input type="radio" name="srelector" id="notsure">Not sure
+                </label>
+                <label for="fav" class="fav" id="fav">
+                    <p class="fav">What is your favorite feature of Us?</p>
+                    <select name="fav" id="fav" class="fav">
+                        <option value="selcetoption" disabled>
+                            Select an option
+                        </option>
+                        <option value="challenges">challenges</option>
+                        <option value="projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="opensource">Open Source</option>
+                    </select>
+                </label>
+                <label for="checkbox" class="check">
+                    <p class="impr">What would you like to see improved?<span class="imprs">
+                        (Check all that apply)</span></p>
+                        <input type="checkbox" name="front" id="front">
+                        Front-end Projects
+                        <input type="checkbox" name="back" id="back">
+                        Back-end Projects
+                        <input type="checkbox" name="datav" id="datav">
+                        Data Visualization
+                        <input type="checkbox" name="challengesc" id="challengesc">
+                        Challenges
+                        <input type="checkbox" name="opensourcec" id="opensourcec">
+                        Open Source Community
+                        <input type="checkbox" name="helprooms" id="helprooms">
+                        Gitter help rooms
+                        <input type="checkbox" name="videos" id="videos">
+                        Videos
+                        <input type="checkbox" name="meetups" id="meetups">
+                        City Meetups
+                </label>
+                <label for="textare" class="comment">
+                    <p class="textarea">Any comments or suggestions?</p>
+                    <textarea name="textarea" id="textare"  placeholder="Write Your Comment Here">
+                    </textarea>
+                </label>
+                <label for="submit" class="submit">
+                    <input type="submit" value="Submit">
+                </label>
+            </div>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
